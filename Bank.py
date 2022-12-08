@@ -58,5 +58,17 @@ if __name__ == '__main__':
 
     cust1 = BankAccount(name="KEN ",    mobile_no=987654321, initial_depo=1000, pin=1232)
     cust2 = BankAccount(name="JAN JAN", mobile_no=98765432, initial_depo=2000, pin=4561)
-   
+    cust3 = BankAccount(name="Criezel", mobile_no=95652663, initial_depo=50000, pin=7892)
+    cust4 = BankAccount(name="Jennelyn", mobile_no=95734737, initial_depo=50000, pin=8843)
+    print("The Number of Customers => ",BankAccount.no_of_cust)
+    print(cust1.basic_details())
+    print(cust2.basic_details())
+    print(cust3.basic_details())
+    print(cust4.basic_details())
+    # cust1.deposit()
+    # print(cust1.basic_details())
+    # cust1.withdrawl()
+    # print(cust1.basic_details())
+    cust1.payment(cust2)
+    print(cust2.basic_details())   
    

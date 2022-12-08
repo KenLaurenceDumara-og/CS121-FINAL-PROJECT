@@ -31,7 +31,7 @@ class BankAccount:
     
     def payment(self, other):
         print("\n***********************************************************")
-        print("|\t\t\t\t\t\tPayment\t\t\t\t\t\t\t  |")
+        print("|\t\t\t\t\t\tPAYMENT\t\t\t\t\t\t\t  |")
         print("***********************************************************")
         amount = int(input("Enter the amount to Pay => "))
         try:

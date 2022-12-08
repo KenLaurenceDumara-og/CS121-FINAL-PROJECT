@@ -64,4 +64,18 @@ def login():
         else:
             print("\n\t\t>>>> Invalid Input Please Try Again!! <<<<")
         print("___________________________________________________________")
+        mobile = int(input("Enter the Mobile Number of recepient => "))
+            if mobile in mobile_acc_link.keys():
+                secondary = mobile_acc_link[mobile]             # use mobile no. to get acct. no.
+                customer_dict[account_no].payment(customer_dict[secondary])
+            else:
+                print("\n>> The Mobile Number You Entered does not have an Account <<")
+        elif user_input1 == '4':
+            print("\n\n\t\t>>>> Successfully Logged Out <<<<")
+            return
+        else:
+            print("\n\t\t>>>> Invalid Input Please Try Again!! <<<<")
+        print("___________________________________________________________")
         customer_dict[account_no].basic_details()
+
+        

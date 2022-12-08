@@ -13,7 +13,6 @@ def sign_up():
         print("Invalid Amount")
         return
     
-    
     pin = int(input("Create PIN => "))
     customer = BankAccount(name=name, mobile_no=mobile_no, initial_depo=initial_depo, pin=pin)
     customer_dict[customer.cust_acc_num] = customer                 # acct. no. stored as key and oject as value

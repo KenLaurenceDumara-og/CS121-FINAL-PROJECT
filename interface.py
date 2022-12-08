@@ -69,7 +69,7 @@ def login():
         
     while True:
         print("\n***********************************************************")
-        print("|\t\t\t\t\tWelcome to Our Bank\t\t\t\t\t  |")
+        print("|\t\t\t\t\tWELCOME TO OUR BANK\t\t\t\t\t  |")
         print("*********************************************************")
         print("\n\t===== Choose what you want to do in Our Bank =====")
         print("\t\t1. Sign Up (New Account Owner)")

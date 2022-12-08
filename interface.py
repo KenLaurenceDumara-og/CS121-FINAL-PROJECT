@@ -41,9 +41,9 @@ def login():
         
        print("\t\t\t\t1. Deposit")
        print("\t\t\t\t2. Withdraw")
-       print("\t\t\t\t3. Money Transfer ")
+       print("\t\t\t\t3. Money Transfer")
        print("\t\t\t\t4. Logout")
-       user_input1 = input("Please Enter your Choice => ")
+       user_input = input("Please Enter Your Choice => ")
 
         if user_input1 == '1':
             customer_dict[account_no].deposit()

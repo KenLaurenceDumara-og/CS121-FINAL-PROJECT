@@ -81,5 +81,16 @@ while True:
         print("\n***********************************************************")
         print("|\t\t\t\t\t\tSign Up\t\t\t\t\t\t\t  |")
         print("*********************************************************") 
+        sign_up()
+    elif user_input1 == '2':
+        login()
+    elif user_input1 == '3':
+        print("\n>> There are currently", BankAccount.no_of_cust,"customer/s in Our bank. <<")
+    elif user_input1 == '4':
+        print("\n\t---------- Thank you for using Our Bank ----------")
+        break
+    else:
+        print("\nInvalid input try again")
+        print("___________________________________________________")
     
   

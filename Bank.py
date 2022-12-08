@@ -27,6 +27,12 @@ class BankAccount:
               print(f"\n>>>> Transaction completed. Current Balance: {self.acc_balance} Pesos <<<<")
         else:
               print("\n\t>>>> Invalid Amount!! Transaction Aborted <<<<")
+    
+    def payment(self, other):
+        print("\n***********************************************************")
+        print("|\t\t\t\t\t\tPayment\t\t\t\t\t\t\t  |")
+        print("***********************************************************")
+        amount = int(input("Enter the amount to Pay => "))
 
    
     

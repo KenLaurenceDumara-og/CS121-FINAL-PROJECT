@@ -21,5 +21,11 @@ class BankAccount:
         print("\n***********************************************************")
         print("|\t\t\t\t\t\tDeposit    \t\t\t\t\t\t  |")
         print("***********************************************************")
-        amount = int(input("enter amount to Deposit => "))
+        amount = int(input("Enter Amount to Deposit => "))
+        try: 
+            amount > 0
+            self.acc_balance = self.acc_balance + amount
+            print(f"\n>>>> Transaction completed. Current Balance: {self.acc_balance} Pesos <<<<")
+        except:
+            
         

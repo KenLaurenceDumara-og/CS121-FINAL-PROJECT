@@ -22,10 +22,11 @@ class BankAccount:
         print("|\t\t\t\t\t\tDeposit    \t\t\t\t\t\t  |")
         print("*******************************************************")
         amount= int(input("Enter amount to Deposit => "))
-        if amount > 0:
+        try:
+              amount > 0
               self.acc_balance = self.acc_balance + amount
               print(f"\n>>>> Transaction completed. Current Balance: {self.acc_balance} Pesos <<<<")
-        else:
+       except:
               print("\n\t>>>> Invalid Amount!! Transaction Aborted <<<<")
     
     def payment(self, other):

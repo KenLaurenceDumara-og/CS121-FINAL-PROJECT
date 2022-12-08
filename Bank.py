@@ -59,4 +59,4 @@ if __name__ == '__main__':
     cust1 = BankAccount(name="KEN ",    mobile_no=987654321, initial_depo=1000, pin=1232)
     cust2 = BankAccount(name="JAN JAN", mobile_no=98765432, initial_depo=2000, pin=4561)
    
-    
+   

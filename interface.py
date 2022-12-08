@@ -13,6 +13,7 @@ def sign_up():
         print("Invalid Amount")
         return
     
+    
     pin = int(input("Create PIN => "))
     customer = BankAccount(name=name, mobile_no=mobile_no, initial_depo=initial_depo, pin=pin)
     customer_dict[customer.cust_acc_num] = customer                 # acct. no. stored as key and oject as value
@@ -39,11 +40,11 @@ def login():
         print("***********************************************************")
         print("\n\t========= Choose what you want to do in Our Bank =========")
         
-        print("\t\t\t\t1. Deposit")
-        print("\t\t\t\t2. Withdraw")
-        print("\t\t\t\t3. Money Transfer ")
-        print("\t\t\t\t4. Logout")
-        user_input1 = input("Please Enter your Choice =>  ")
+       print("\t\t\t\t1. Deposit")
+       print("\t\t\t\t2. Withdraw")
+       print("\t\t\t\t3. Money Transfer ")
+       print("\t\t\t\t4. Logout")
+       user_input1 = input("Please Enter your Choice => ")
 
         if user_input1 == '1':
             customer_dict[account_no].deposit()

@@ -54,11 +54,10 @@ def login():
             print("|\t\t\t\t\t\tMONEY TRANSFER\t\t\t\t\t  |")
             print("***********************************************************")
         mobile = int(input("Enter the Mobile Number of the Recepient => "))
-            try:
-                mobile in mobile_acc_link.keys()
+            if mobile in mobile_acc_link.keys():
                 secondary = mobile_acc_link[mobile]             # use mobile no. to get acct. no.
                 customer_dict[account_no].payment(customer_dict[secondary])
-            except:
+            else:
                 print("\n>> The Mobile Number You Entered does not have an Account <<")
         elif user_input1 == '4':
             print("\n\n\t\t>>>> Successfully Logged Out <<<<")
@@ -67,6 +66,20 @@ def login():
             print("\n\t\t>>>> INVALID INPUT PLEASE TRY AGAIN!! <<<<")
         print("_________________________________________________________")
         customer_dict[account_no].basic_details()
-        
+while True:
+    print("\n***********************************************************")
+    print("|\t\t\t\t\tWelcome to Our Bank\t\t\t\t\t  |")
+    print("*********************************************************")
+    print("\n\t===== Choose what you want to do in Our Bank =====")
+    print("\t\t1. Sign Up (New Account Owner)")
+    print("\t\t2. Login (Existing Account) ")
+    print("\t\t3. Display Number of Customer ")
+    print("\t\t4. Exit")
+    user_input1 = input("Please Enter your Choice =>  ")
+
+    if user_input1 == '1':
+        print("\n***********************************************************")
+        print("|\t\t\t\t\t\tSign Up\t\t\t\t\t\t\t  |")
+        print("*********************************************************") 
     
   

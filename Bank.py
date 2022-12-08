@@ -28,5 +28,15 @@ class BankAccount:
             print(f"\n>>>> Transaction completed. Current Balance: {self.acc_balance} Pesos <<<<")
         except:
             print("\n\t>>>> Invalid Amount!! Transaction Aborted <<<<")
-            
+        def withdraw(self):
+        print("\n***********************************************************")
+        print("|\t\t\t\t\t\tWithdraw\t\t\t\t\t\t  |")
+        print("*********************************************************")
+        amount = int(input("Enter amount to Withdraw => "))
+        try:
+            amount <= self.acc_balance and amount > 0
+            self.acc_balance = self.acc_balance - amount
+            print(f"\n>> Transaction completed. Current Balance: {self.acc_balance} Pesos <<")
+        except:
+            print("\n\t>>>> Invalid Amount!! Transaction Aborted <<<<")    
         

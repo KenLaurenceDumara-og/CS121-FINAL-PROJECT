@@ -63,4 +63,5 @@ if __name__ == '__main__':
     print("The Number of Customers => ",BankAccount.no_of_cust)
     print(cust1.basic_details()) 
     print(cust2.basic_details())
-   
+    print(cust3.basic_details())
+    print(cust4.basic_details())

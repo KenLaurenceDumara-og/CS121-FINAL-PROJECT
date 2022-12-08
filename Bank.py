@@ -28,25 +28,5 @@ class BankAccount:
         else:
             print("\n\t>>>> Invalid Amount!! Transaction Aborted <<<<")
 
-    def withdrawl(self):
-        print("\n***********************************************************")
-        print("|\t\t\t\t\t\tWithdraw\t\t\t\t\t\t  |")
-        print("***********************************************************")
-        amount = int(input("Enter amount to Withdraw => "))
-        if amount <= self.acc_balance and amount > 0:
-            self.acc_balance = self.acc_balance - amount
-            print(f"\n>> Transaction completed. Current Balance: {self.acc_balance} Pesos <<")
-        else:
-            print("\n\t>>>> Invalid Amount!! Transaction Aborted <<<<")
-
-    def payment(self, other):
-        print("\n***********************************************************")
-        print("|\t\t\t\t\t\tPayment\t\t\t\t\t\t\t  |")
-        print("***********************************************************")
-        amount = int(input("Enter the amount to Pay => "))
-        if amount <= self.acc_balance and amount > 0:
-            self.acc_balance = self.acc_balance - amount
-            other.acc_balance= other.acc_balance + amount
-            print(f"\n>> Transaction completed. Current Balance: {self.acc_balance} Pesos <<")
-        else:
-            print("\n\t>>>> Invalid Amount!! Transaction Aborted <<<<")
+   
+    

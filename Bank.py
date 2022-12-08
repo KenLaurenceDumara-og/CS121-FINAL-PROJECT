@@ -27,5 +27,6 @@ class BankAccount:
             self.acc_balance = self.acc_balance + amount
             print(f"\n>>>> Transaction completed. Current Balance: {self.acc_balance} Pesos <<<<")
         except:
+            print("\n\t>>>> Invalid Amount!! Transaction Aborted <<<<")
             
         

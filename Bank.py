@@ -25,9 +25,9 @@ class BankAccount:
         try:
             amount > 0
             self.acc_balance = self.acc_balance + amount
-            print(f"\n>>>> Transaction completed. Current Balance: {self.acc_balance} Pesos <<<<")
+            print(f"\n>>>> Transaction Completed. Current Balance =>  {self.acc_balance} Pesos <<<<")
        except:
-            print("\n\t>>>> Invalid Amount!! Transaction Aborted <<<<")
+            print("\n\t>>>> INVALID AMOUNT!! TRANSACTION ABORTED <<<<")
     
     def payment(self, other):
         print("\n***********************************************************")

@@ -21,11 +21,11 @@ class BankAccount:
         print("\n***********************************************************")
         print("|\t\t\t\t\t\tDEPOSIT    \t\t\t\t\t\t  |")
         print("*******************************************************")
-        amount= int(input("Enter Amount to Deposit => "))
+        amount= int(input("Enter the Amount to Deposit => "))
         try:
             amount > 0
             self.acc_balance = self.acc_balance + amount
-            print(f"\n>>>> Transaction Completed. Current Balance =>  {self.acc_balance} Pesos <<<<")
+            print(f"\n>>>> TRANSACTION COMPLETED. Current Balance =>  {self.acc_balance} Pesos <<<<")
        except:
             print("\n\t>>>> INVALID AMOUNT!! TRANSACTION ABORTED <<<<")
     
@@ -38,7 +38,19 @@ class BankAccount:
             amount <= self.acc_balance and amount > 0
             self.acc_balance = self.acc_balance - amount
             other.acc_balance= other.acc_balance + amount
-            print(f"\n>> Transaction completed. Current Balance: {self.acc_balance} Pesos <<")
+            print(f"\n>> TRANSACTION COMPLETED. Current Balance: {self.acc_balance} Pesos <<")
+        except:
+            print("\n\t>>>> INVALID AMOUNT!! TRANSACTION ABORTED <<<<")
+              
+    def withdraw(self):
+        print("\n***********************************************************")
+        print("|\t\t\t\t\t\tWITHDRAW\t\t\t\t\t\t  |")
+        print("***********************************************************")
+        amount = int(input("Enter the Amount to Withdraw => "))
+        try:
+            amount <= self.acc_balance and amount > 0
+            self.acc_balance = self.acc_balance - amount
+            print(f"\n>> TRANSACTION COMPLETED. Current Balance: {self.acc_balance} Pesos <<")
         except:
             print("\n\t>>>> INVALID AMOUNT!! TRANSACTION ABORTED <<<<")
 if __name__ == '__main__':

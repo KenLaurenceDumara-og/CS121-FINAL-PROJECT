@@ -19,7 +19,7 @@ class BankAccount:
               
     def deposit(self):
         print("\n***********************************************************")
-        print("|\t\t\t\t\t\tDeposit    \t\t\t\t\t\t  |")
+        print("|\t\t\t\t\t\tDEPOSIT    \t\t\t\t\t\t  |")
         print("*******************************************************")
         amount= int(input("Enter amount to Deposit => "))
         try:

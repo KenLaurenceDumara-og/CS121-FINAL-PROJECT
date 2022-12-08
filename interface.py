@@ -26,10 +26,11 @@ def login():
     print("***********************************************************")
     account_no = int(input("Enter your Account Number => "))
     account_pin = int(input("Enter your Pin => "))
-    if account_no in customer_dict.keys() and account_pin == customer_dict[account_no].pin :
+    try:
+        account_no in customer_dict.keys() and account_pin == customer_dict[account_no].pin 
         print(f"\n\t>>>>> {customer_dict[account_no].name} CONGRATS! Successfully Logged In! <<<<")
         customer_dict[account_no].basic_details()
-    else:
+    except:
         print("\n\t>>>>>> Incorrect Account Number or Pin!! <<<<<<")
         return
     while True:

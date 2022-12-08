@@ -7,10 +7,10 @@ class BankAccount:
         
         self.name = name
         self.cust_acc_num = BankAccount.acc_num
-        self.mobile_no  = mobile_no
+        self.mobile_no = mobile_no
         self.acc_balance = initial_depo
         self.pin = pin
-
+        
         BankAccount.acc_num = BankAccount.acc_num + 1 
         BankAccount.no_of_cust = BankAccount.no_of_cust + 1
         

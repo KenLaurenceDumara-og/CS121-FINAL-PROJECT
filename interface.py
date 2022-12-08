@@ -35,7 +35,7 @@ def login():
         return
     while True:
         print("***********************************************************")
-        print("|\t\t\t\t\tWelcome to Our Bank\t\t\t\t\t  |")
+        print("|\t\t\t\t\tWELCOME TO OUR BANK\t\t\t\t\t  |")
         print("***********************************************************")
         print("\n\t========= Choose what you want to do in Our Bank =========")
         
@@ -51,7 +51,7 @@ def login():
             customer_dict[account_no].withdrawl()
         elif user_input1 == '3':
             print("\n***********************************************************")
-            print("|\t\t\t\t\t\tMoney Transfer\t\t\t\t\t  |")
+            print("|\t\t\t\t\t\tMONEY TRANSFER\t\t\t\t\t  |")
             print("***********************************************************")
         
     

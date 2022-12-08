@@ -48,12 +48,12 @@ def login():
         if user_input1 == '1':
             customer_dict[account_no].deposit()
         elif user_input1 == '2':
-            customer_dict[account_no].withdrawl()
+            customer_dict[account_no].withdraw()
         elif user_input1 == '3':
             print("\n***********************************************************")
             print("|\t\t\t\t\t\tMONEY TRANSFER\t\t\t\t\t  |")
             print("***********************************************************")
-        mobile = int(input("Enter the Mobile Number of recepient => "))
+        mobile = int(input("Enter the Mobile Number of the Recepient => "))
             if mobile in mobile_acc_link.keys():
                 secondary = mobile_acc_link[mobile]             # use mobile no. to get acct. no.
                 customer_dict[account_no].payment(customer_dict[secondary])
@@ -63,7 +63,7 @@ def login():
             print("\n\n\t\t>>>> Successfully Logged Out <<<<")
             return
         else:
-            print("\n\t\t>>>> Invalid Input Please Try Again!! <<<<")
+            print("\n\t\t>>>> INVALID INPUT PLEASE TRY AGAIN!! <<<<")
         print("_________________________________________________________")
         customer_dict[account_no].basic_details()
     

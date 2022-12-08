@@ -71,3 +71,4 @@ if __name__ == '__main__':
     # print(cust1.basic_details())
     cust1.payment(cust2)
     print(cust2.basic_details())
+              

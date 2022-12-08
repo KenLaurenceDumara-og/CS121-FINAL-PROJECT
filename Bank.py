@@ -53,6 +53,7 @@ class BankAccount:
             print(f"\n>> TRANSACTION COMPLETED. Current Balance: {self.acc_balance} Pesos <<")
         except:
             print("\n\t>>>> INVALID AMOUNT!! TRANSACTION ABORTED <<<<")
+              
 if __name__ == '__main__':
 
     cust1 = BankAccount(name="KEN ",    mobile_no=987654321, initial_depo=1000, pin=1232)

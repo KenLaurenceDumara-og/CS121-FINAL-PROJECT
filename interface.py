@@ -6,9 +6,9 @@ customer_dict = {}              # use account no. as key and class object(custom
 mobile_acc_link = {}            # use mobile no. as key and store account no. as value, for linking purpose
 
 def sign_up():
-    name = input("Enter your Name => ")
+    name = input("Enter Your Name => ")
     mobile_no = int(input("Enter Your Mobile Number => "))
-    initial_depo = int(input("Enter the Initial Deposit Amount => "))
+    initial_depo = int(input("Enter the Amount to Deposit => "))
     if initial_depo <= 0:
         print("Invalid Amount")
         return
@@ -22,7 +22,7 @@ def sign_up():
 
 def login():
     print("\n***********************************************************")
-    print("|\t\t\t\t\t\tLogin \t\t\t\t\t\t\t  |")
+    print("|\t\t\t\t\t\tLOGIN \t\t\t\t\t\t\t  |")
     print("***********************************************************")
     account_no = int(input("Enter your Account Number => "))
     account_pin = int(input("Enter your Pin => "))

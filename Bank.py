@@ -38,7 +38,7 @@ class BankAccount:
             amount <= self.acc_balance and amount > 0
             self.acc_balance = self.acc_balance - amount
             other.acc_balance= other.acc_balance + amount
-            print(f"\n>> TRANSACTION COMPLETED. Current Balance: {self.acc_balance} Pesos <<")
+            print(f"\n>> TRANSACTION COMPLETED. Current Balance =>  {self.acc_balance} Pesos <<")
         except:
             print("\n\t>>>> INVALID AMOUNT!! TRANSACTION ABORTED <<<<")
               
@@ -50,7 +50,7 @@ class BankAccount:
         try:
             amount <= self.acc_balance and amount > 0
             self.acc_balance = self.acc_balance - amount
-            print(f"\n>> TRANSACTION COMPLETED. Current Balance: {self.acc_balance} Pesos <<")
+            print(f"\n>> TRANSACTION COMPLETED. Current Balance =>  {self.acc_balance} Pesos <<")
         except:
             print("\n\t>>>> INVALID AMOUNT!! TRANSACTION ABORTED <<<<")
               

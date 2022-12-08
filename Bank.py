@@ -19,37 +19,37 @@ class BankAccount:
      
     def deposit(self): 
         print("\n***********************************************************")
-        print("|\t\t\t\t\t\tDeposit    \t\t\t\t\t\t  |")
+        print("|\t\t\t\t\t\tDEPOSIT    \t\t\t\t\t\t  |")
         print("***********************************************************")
         amount = int(input("Enter Amount to Deposit => "))
         try: 
             amount > 0
             self.acc_balance = self.acc_balance + amount
-            print(f"\n>>>> Transaction completed. Current Balance: {self.acc_balance} Pesos <<<<")
+            print(f"\n>>>> TRANSACTION COMPLETED. Current Balance => {self.acc_balance} Pesos <<<<")
         except:
-            print("\n\t>>>> Invalid Amount!! Transaction Aborted <<<<")
-        def withdraw(self):
+            print("\n\t>>>> INVALID AMOUNT!! TRANSACTION ABORTED <<<<")
+    def withdraw(self):
         print("\n***********************************************************")
-        print("|\t\t\t\t\t\tWithdraw\t\t\t\t\t\t  |")
+        print("|\t\t\t\t\t\tWITHDRAW\t\t\t\t\t\t  |")
         print("*********************************************************")
-        amount = int(input("Enter amount to Withdraw => "))
+        amount = int(input("Enter Amount to Withdraw => "))
         try:
             amount <= self.acc_balance and amount > 0
             self.acc_balance = self.acc_balance - amount
-            print(f"\n>> Transaction completed. Current Balance: {self.acc_balance} Pesos <<")
+            print(f"\n>> TRANSACTION COMPLETED. Current Balance: {self.acc_balance} Pesos <<")
         except:
-            print("\n\t>>>> Invalid Amount!! Transaction Aborted <<<<")    
-        def payment(self, other):
+            print("\n\t>>>> INVALID AMOUNT!! TRANSACTION ABORTED <<<<")    
+    def payment(self, other):
         print("\n***********************************************************")
-        print("|\t\t\t\t\t\tPayment\t\t\t\t\t\t\t  |")
+        print("|\t\t\t\t\t\tPAYMENT\t\t\t\t\t\t\t  |")
         print("*********************************************************")
-        amount = int(input("Enter the amount to Pay => "))
+        amount = int(input("Enter the Amount to Pay => "))
         try:
             amount <= self.acc_balance and amount > 0
             self.acc_balance = self.acc_balance - amount
             other.acc_balance= other.acc_balance + amount
-            print(f"\n>> Transaction completed. Current Balance: {self.acc_balance} Pesos <<")
+            print(f"\n>> TRANSACTION COMPLETED. Current Balance: {self.acc_balance} Pesos <<")
         except:
-            print("\n\t>>>> Invalid Amount!! Transaction Aborted <<<<")
+            print("\n\t>>>> INVALID AMOUNT!! TRANSACTION ABORTED <<<<")
             
            

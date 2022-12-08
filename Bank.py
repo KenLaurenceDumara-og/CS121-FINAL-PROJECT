@@ -11,22 +11,22 @@ class BankAccount:
         self.acc_balance = initial_depo
         self.pin = pin
 
-        BankAccount.acc_num = BankAccount.acc_num + 1
+        BankAccount.acc_num = BankAccount.acc_num + 1 
         BankAccount.no_of_cust = BankAccount.no_of_cust + 1
-
+        
     def basic_details(self):
-        print(f"\nUser: {self.name}\t\t\t Account No: {self.cust_acc_num}\t\t Balance: {self.acc_balance} Pesos\n")
-
+        print(f"\nUser: {self.name}\t\t\t Account No: {self.cust_acc_num}\t\t Balance: {self.acc_balance} Pesos\n"
+              
     def deposit(self):
         print("\n***********************************************************")
         print("|\t\t\t\t\t\tDeposit    \t\t\t\t\t\t  |")
         print("*******************************************************")
-        amount = int(input("Enter amount to Deposit => "))
+        amount= int(input("Enter amount to Deposit => "))
         if amount > 0:
-            self.acc_balance = self.acc_balance + amount
-            print(f"\n>>>> Transaction completed. Current Balance: {self.acc_balance} Pesos <<<<")
+              self.acc_balance = self.acc_balance + amount
+              print(f"\n>>>> Transaction completed. Current Balance: {self.acc_balance} Pesos <<<<")
         else:
-            print("\n\t>>>> Invalid Amount!! Transaction Aborted <<<<")
+              print("\n\t>>>> Invalid Amount!! Transaction Aborted <<<<")
 
    
     

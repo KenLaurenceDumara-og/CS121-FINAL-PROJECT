@@ -62,4 +62,5 @@ if __name__ == '__main__':
     cust4 = BankAccount(name="Jennelyn", mobile_no=95734737, initial_depo=50000, pin=8843)
     print("The Number of Customers => ",BankAccount.no_of_cust)
     print(cust1.basic_details()) 
+    print(cust2.basic_details())
    

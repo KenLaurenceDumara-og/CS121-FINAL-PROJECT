@@ -16,3 +16,10 @@ class BankAccount:
 
     def basic_details(self):
         print(f"\nUser: {self.name}\t\t\t Account No: {self.cust_acc_num}\t\t Balance: {self.acc_balance} Pesos\n")
+     
+    def deposit(self): 
+        print("\n***********************************************************")
+        print("|\t\t\t\t\t\tDeposit    \t\t\t\t\t\t  |")
+        print("***********************************************************")
+        amount = int(input("enter amount to Deposit => "))
+        

@@ -66,31 +66,32 @@ def login():
             print("\n\t\t>>>> INVALID INPUT PLEASE TRY AGAIN!! <<<<")
         print("_________________________________________________________")
         customer_dict[account_no].basic_details()
-while True:
-    print("\n***********************************************************")
-    print("|\t\t\t\t\tWelcome to Our Bank\t\t\t\t\t  |")
-    print("*********************************************************")
-    print("\n\t===== Choose what you want to do in Our Bank =====")
-    print("\t\t1. Sign Up (New Account Owner)")
-    print("\t\t2. Login (Existing Account) ")
-    print("\t\t3. Display Number of Customer ")
-    print("\t\t4. Exit")
-    user_input1 = input("Please Enter your Choice =>  ")
+        
+    while True:
+        print("\n***********************************************************")
+        print("|\t\t\t\t\tWelcome to Our Bank\t\t\t\t\t  |")
+        print("*********************************************************")
+        print("\n\t===== Choose what you want to do in Our Bank =====")
+        print("\t\t1. Sign Up (New Account Owner)")
+        print("\t\t2. Login (Existing Account) ")
+        print("\t\t3. Display Number of Customer ")
+        print("\t\t4. Exit")
+        user_input1 = input("Please Enter your Choice =>  ")
 
     if user_input1 == '1':
         print("\n***********************************************************")
-        print("|\t\t\t\t\t\tSign Up\t\t\t\t\t\t\t  |")
+        print("|\t\t\t\t\t\tSIGN UP\t\t\t\t\t\t\t  |")
         print("*********************************************************") 
         sign_up()
     elif user_input1 == '2':
         login()
     elif user_input1 == '3':
-        print("\n>> There are currently", BankAccount.no_of_cust,"customer/s in Our bank. <<")
+        print("\n>> There are Currently", BankAccount.no_of_cust,"customer/s in Our Bank. <<")
     elif user_input1 == '4':
-        print("\n\t---------- Thank you for using Our Bank ----------")
+        print("\n\t---------- THANK YOU FOR USING OUR BANK ----------")
         break
     else:
-        print("\nInvalid input try again")
+        print("\nINVALID INPUT PLEASE TRY AGAIN")
         print("___________________________________________________")
     
   

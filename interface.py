@@ -1,5 +1,5 @@
 from playsound import playsound
-playsound('Banksound.mp3')
+playsound('banksound.mp3')
 from Bank import BankAccount
 
 customer_dict = {}              # use account no. as key and class object(customer account) as value

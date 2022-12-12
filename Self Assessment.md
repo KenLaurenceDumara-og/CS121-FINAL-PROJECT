@@ -1,3 +1,5 @@
+## Self-Assessment
+
 Code Reusability - 4 Practices DRY (Do no Repeat Yourself) method excellently, leading to a shorter and cleaner program structure.
 
 Maintainability - 3 The program's structure is based on OOP principles. Codes are readable, understandable, aiding to its maintainability.

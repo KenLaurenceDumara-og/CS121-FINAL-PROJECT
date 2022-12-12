@@ -1,7 +1,7 @@
 class BankAccount:
 
     no_of_cust = 0
-    acc_num = 10010
+    acc_num = 4431
     
     def __init__(self, name, mobile_no, initial_depo, pin):
         

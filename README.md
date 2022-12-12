@@ -14,6 +14,11 @@ What can this Bank Management System do?
 5. Withdraw
 6. Money Transfer
 
+## This version of  bank system 
+1. This bank system can  create  an account for us to log in on the bank account.
+2. It can handled one  or more account and  and you can also transfer money to another account. 
+3. You can withdraw and deposit here on our  bank account.
+
 ## UML Diagram
 ### UML Diagram for Bank Management System
 ![image](https://user-images.githubusercontent.com/113971162/206854298-9b8975b8-574d-46d6-8493-ee5496702df0.png)
